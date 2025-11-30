@@ -91,8 +91,22 @@ app.use((req, res, next) => {
       host: "0.0.0.0",
       reusePort: true,
     },
-    () => {
+    async () => {
+      const url = `http://localhost:${port}`;
       log(`serving on port ${port}`);
+      console.log(`\n✨ CineVault is ready!`);
+      console.log(`📍 Open your browser and go to: ${url}`);
+      console.log(`🔗 Click here or copy: ${url}\n`);
+      
+      // Auto-open browser in development
+      if (process.env.NODE_ENV === "development") {
+        try {
+          const open = await import("open");
+          open.default(url);
+        } catch (err) {
+          // open package not available, that's ok - user can manual open
+        }
+      }
     },
   );
 })();
