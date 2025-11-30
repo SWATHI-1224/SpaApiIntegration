@@ -25,7 +25,7 @@ export default function Movies() {
   });
 
   const { data: moviesData, isLoading, error, refetch } = useQuery<MovieResponse>({
-    queryKey: ['/api/movies/discover', queryParams.toString()],
+    queryKey: [`/api/movies/discover?${queryParams.toString()}`],
   });
 
   const genres = genresData?.genres || [];
