@@ -1,0 +1,140 @@
+Title:
+Build a Single Page Application (SPA) with External API Integration Using Any Front-End Technology
+
+Description:
+Title:
+Build a Single Page Application (SPA) with External API Integration Using Any Front-End Technology
+
+Project Overview:
+This project focuses on building a fully functional Single Page Application (SPA) using any modern front-end technology such as React, Vue.js, Angular, or even Vanilla JavaScript with a routing library. The primary objective is to demonstrate strong skills in front-end development, component-based architecture, API integration, and client-side routing. The application will be built around a public API of your choice, such as FakeStoreAPI, TMDB Movies API, News API, Weather API, or RandomUser API, and it will fetch real-time data from the selected source. The project will include three core pages: a Home page that introduces the application, a List page that dynamically displays data fetched from the API in a clean grid or list layout, and a Detail page that provides full information about a selected item using URL parameters. The SPA will handle loading states, API errors, empty results, and navigation between routes smoothly. It will also use reusable components such as Navbar, Card, Button, Loader, Error Message, and Breadcrumbs to maintain clean code quality and consistency.
+
+In addition to the mandatory requirements, the project will include multiple advanced bonus features to enhance functionality and user experience. These include a live search bar with autocomplete suggestions, category-based filtering, sorting options, and either pagination or infinite scrolling for better data handling. A fully implemented Dark and Light mode switch will allow users to choose their preferred theme, with preferences saved using localStorage. Users will also have the ability to add items to a “Favorites” section, which will persist across sessions. The UI will feature skeleton loaders or shimmer effects during API calls, providing a smoother visual experience. Furthermore, the app will include toast notifications, animation transitions between pages, a custom 404 “Not Found” page, and a retry mechanism for failed API calls. Additional enhancements such as offline mode using service workers, responsive design for all screen sizes, smooth scroll behavior, and an optional PWA setup make the application production-ready.
+
+The final deliverables will include a clear folder structure, API integration explanation, routing flow, screenshots of all pages, description of components, a GitHub repository link, and optionally a deployed version on Netlify or Vercel. This project showcases not only the ability to build a complete SPA but also covers modern UI/UX practices, performance optimization, and real-world front-end development patterns that significantly elevate the application's quality and depth.
+Create a fully functional Single Page Application (SPA) that fetches data from a public API and displays it across multiple dynamic pages.
+
+The app must include routing, loading/error states, reusable components, and clean UI/UX.
+
+This assignment evaluates your skills in front-end development, API consumption, state management, routing, and component architecture.
+
+You may use React, Vue, Angular, or HTML/CSS/JS.
+
+Key Requirements
+1. Technology Selection
+Pick one technology:
+
+React (recommended)
+Vue.js
+Angular
+Vanilla JS + Router library
+Document:
+
+Why you selected it
+Basic folder structure
+2. API Integration
+Choose one public API, for example:
+
+Weather API
+TMDB Movies API
+News API
+Products API (FakeStoreAPI)
+Cryptocurrency API
+Random User API
+Your frontend must:
+
+Fetch data from the selected API
+Handle loading states
+Handle errors
+Show results dynamically
+3. SPA Requirements (Routing)
+Your application must include minimum 3 routes/pages:
+
+Page 1: Home Page
+Simple welcome page
+Overview of what the app does
+Link buttons to navigate to other sections
+Page 2: List Page
+Display API data in a list/grid format:
+
+List of movies/products/users/articles etc.
+Each item should show essential details (thumbnail, title, price, etc.)
+Clicking an item opens the detail page
+Page 3: Detail Page
+Show detailed information fetched dynamically:
+
+Image
+Title
+Description
+Additional metadata
+Back navigation button
+4. Mandatory Features
+Your SPA must include:
+
+✔ API Integration
+Use Fetch / Axios
+Handle success, error, empty-data states
+✔ Routing
+Home → List → Detail navigation
+URL parameters (e.g., /product/3)
+✔ Reusable Components
+Examples:
+
+Button
+Card
+Loader
+Error message
+Navbar
+✔ State Handling
+Local state (React hooks)
+Vue reactive data
+Angular services
+Or plain JS global state
+5. UI/UX Requirements
+Responsive design (mobile/tablet/desktop)
+Clean layout
+Proper spacing & alignment
+Loading spinner
+Error messages
+Active state in navbar
+6. Optional Bonus Features
+(For extra points)
+
+Search bar
+Filters (category, price, rating)
+Pagination or infinite scroll
+Dark mode toggle
+Add to favorites (localStorage)
+Animations / transitions
+(Optional — but increases quality.)
+
+Tools You Can Use
+React + Vite / CRA
+Vue CLI / Vite
+Angular CLI
+Plain HTML/CSS/JS
+Axios or Fetch API
+Tailwind / Bootstrap / Material UI (optional)
+Deliverables
+Submit one clean project report containing:
+
+Technology used
+API selected
+Folder structure
+Screenshots of ALL pages
+Code explanation (short)
+Components used
+Routing explanation
+API integration explanation
+GitHub repo link
+Live demo (Netlify/Vercel) — optional
+Challenges + solutions
+Evaluation Criteria
+You will be evaluated on:
+
+Clean UI & responsive design
+Working routing & SPA structure
+Correct API handling
+Code quality + reusability
+Error + loading state handling
+Documentation clarity
+Extra features
